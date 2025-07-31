@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> prática 4</title>
+</head>
+<body>
+    <p><strong> Venha ser feliz e se cuidar!!</strong> 
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Corpo Ativo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #ffffff 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-style: italic;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #f0f8ff;
+            margin-bottom: 30px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color: #1e3c72;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 10px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .services-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .services-list li:before {
+            content: "💪";
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(45deg, #2a5298, #1e3c72);
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(30, 60, 114, 0.3);
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contact-item {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Academia Corpo Ativo</h1>
+            <p class="subtitle">Transforme seu corpo, transforme sua vida!</p>
+        </header>
+
+        <div class="content-grid">
+            <div class="card">
+                <h2>Sobre Nós</h2>
+                <p>A Academia Corpo Ativo é o lugar ideal para quem busca uma vida mais saudável e ativa. Com equipamentos modernos e profissionais qualificados, oferecemos o melhor ambiente para você alcançar seus objetivos fitness.</p>
+                <p>Nossa missão é proporcionar energia, motivação e resultados reais para todos os nossos alunos, independente do nível de condicionamento físico.</p>
+            </div>
+
+            <div class="card">
+                <h2>Nossos Serviços</h2>
+                <ul class="services-list">
+                    <li>Musculação com equipamentos de última geração</li>
+                    <li>Aulas de aeróbica e dança</li>
+                    <li>Treinamento funcional</li>
+                    <li>Personal trainer especializado</li>
+                    <li>Avaliação física completa</li>
+                    <li>Acompanhamento nutricional</li>
+                    <li>Aulas de yoga e pilates e se precisar temos Fisoterapia</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Horários</h2>
+                <p><strong>Segunda a Sexta:</strong><br>06:00 às 20:00</p>
+                <p><strong>Sábados:</strong><br>08:00 às 18:00</p>
+                <p><strong>Domingos:</strong><br>08:00 às 14:00</p>
+                <p><strong>Feriados:</strong><br>Consulte nossa programação especial</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2 style="color: #1e3c72; margin-bottom: 20px;">Pronto para começar sua transformação?</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1rem; color: #555;">Venha conhecer nossa academia e faça uma aula experimental gratuita!</p>
+            <button class="cta-button" onclick="alert('Entre em contato conosco para agendar sua visita!')">Agendar Visita</button>
+        </div>
+
+        <div class="contact-info">
+            <h3>Entre em Contato</h3>
+            <div class="contact-item">📍 Rua Rio Salgado N 291</div>
+            <div class="contact-item">📞 (11) 9999-8888</div>
+            <div class="contact-item">✉️ contato@academiacorpoativo.com.br</div>
+            <div class="contact-item">🌐 www.academiacorpoativo.com.br</div>
+        </div>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'967dd9486395f61a',t:'MTc1Mzk3MjgwNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+</body>
+</html>
